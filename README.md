@@ -1,5 +1,5 @@
 # Cloud-IaC-AlaCarte
-![cloud-iac-alacarte Logo](/Cloud-IaC-AlaCarte/cloud_alacarte_logo)
+![cloud-iac-alacarte Logo](/Cloud-IaC-AlaCarte/cloud_alacarte_logo.jpeg)
 **Cloud-IaC-AlaCarte** is a modular, multi-cloud Infrastructure as Code (IaC) framework that simplifies the deployment and management of cloud resources across AWS, Azure, and GCP.
 
 ## Features
