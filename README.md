@@ -43,20 +43,28 @@ Utility scripts for managing platform operations, such as provisioning accounts 
    cd Cloud-IaC-AlaCarte
    ```
 2. **Install Dependencies and Configure the Environment**:
-`pip install boto3 azure-mgmt-subscription google-cloud-resource-manager pyyaml`
+  ```
+  pip install boto3 azure-mgmt-subscription google-cloud-resource-manager pyyaml
+  ```
 ### Install Terraform
 #### Follow instructions at: https://www.terraform.io/downloads
 
 3. **Set Up and Deploy:** 
 
 ##### Run the Python script to set up accounts or projects
-`python cloud-scripts/setup.py`
+  ```
+  python cloud-scripts/setup.py
+  ```
 
 ## Initialize Terraform
-`terraform init`
+```
+terraform init
+```
 
 ## Deploy the infrastructure
-`terraform apply`
+  ```
+  terraform apply
+  ```
 
 # Project Structure
 This is a modular, multi-cloud IaC framework providing reusable components for managing cloud infrastructure, platform governance, application-specific setups, and utility scripts.
@@ -67,7 +75,6 @@ Cloud-IaC-AlaCarte/
 ├── LICENSE                      # Project license
 ├── README.md                    # This documentation file
 ├── infra-modules/               # A la carte reusable infrastructure modules
-│   ├── compute/                 # Modules for multi-cloud compute resources (e.g., VMs, EC2)
 │   ├── networking/              # Modules for multi-cloud networking (e.g., VPCs, subnets)
 │   └── nosql-db/                # Modules for NoSQL databases
 │       ├── aws/                 # AWS-specific NoSQL database implementation (e.g., DynamoDB)
@@ -78,6 +85,7 @@ Cloud-IaC-AlaCarte/
 │   │   └── control-plane/       # Scripts for central governance (e.g., account provisioning)
 │   ├── modules/                 # Reusable modules for governance
 │   │   ├── aws-organizations/   # Manage AWS Organizations and Service Control Policies (SCPs)
+│   ├── compute/                 # Modules for multi-cloud compute resources (e.g., VMs, EC2)
 │   │   ├── azure-management-groups/ # Manage Azure Management Groups and Policies
 │   │   └── gcp-resource-hierarchy/  # Manage GCP folders and IAM policies
 │   └── terraform/               # Environment-specific governance configurations
@@ -119,9 +127,15 @@ Utility scripts for managing platform operations, such as provisioning accounts 
 ## To contribute:
 ### 1. Fork the repository.
 ### 2. Create a feature branch:
-`git checkout -b feature/your-feature-name`
+  ```
+  git checkout -b feature/your-feature-name
+  ```
 ### 3. Commit your changes:
-`git commit -m "Add your commit message"`
+  ```
+  git commit -m "Add your commit message"
+  ```
 ### 4. Push to your fork:
-`git push origin feature/your-feature-name`
+  ```
+  git push origin feature/your-feature-name
+  ```
 ### 5. Open a pull request and describe your changes.
