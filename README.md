@@ -46,26 +46,25 @@ terraform apply
 # Project Structure
 ```
 Cloud-IaC-AlaCarte/
-├── cloud-scripts/      # Python scripts for multi-cloud setup
-├── terraform/          # Terraform modules and configurations
-├── docs/               # Documentation and guides
-├── .github/            # CI/CD workflows
-└── README.md           # Project overview
+├── cloud-scripts                 # Scripts to manage and automate cloud operations
+│   └── control-plane             # Scripts specific to managing the control plane of the infrastructure
+├── docs                          # Documentation for the project, including design, usage, and setup instructions
+└── terraform                     # Terraform configurations for Infrastructure as Code (IaC)
+    ├── control-plane             # Terraform code for setting up and managing the control plane infrastructure
+    └── modules                   # Reusable Terraform modules for modular infrastructure components
+        └── control-plane         # Control-plane-specific modules for multi-cloud support
+            ├── aws               # AWS-specific control plane infrastructure modules
+            ├── azure             # Azure-specific control plane infrastructure modules
+            └── gcp               # GCP-specific control plane infrastructure modules
 ```
 
 # Contributing
-
-```
-# To contribute:
-# 1. Fork the repository.
-# 2. Create a feature branch:
-git checkout -b feature/your-feature-name
-
-# 3. Commit your changes:
-git commit -m "Add your commit message"
-
-# 4. Push to your fork:
-git push origin feature/your-feature-name
-
-# 5. Open a pull request and describe your changes.
-````
+## To contribute:
+### 1. Fork the repository.
+### 2. Create a feature branch:
+`git checkout -b feature/your-feature-name`
+### 3. Commit your changes:
+`git commit -m "Add your commit message"`
+### 4. Push to your fork:
+`git push origin feature/your-feature-name`
+### 5. Open a pull request and describe your changes.
