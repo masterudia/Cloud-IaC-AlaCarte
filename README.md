@@ -59,7 +59,7 @@ Utility scripts for managing platform operations, such as provisioning accounts 
 `terraform apply`
 
 # Project Structure
-**Cloud-IaC-AlaCarte** is a modular, multi-cloud Infrastructure as Code (IaC) framework. It is designed to provide reusable, "a la carte" components for managing cloud infrastructure and workloads, including platform-level governance, application-specific infrastructure, and utility scripts.
+This is a modular, multi-cloud IaC framework providing reusable components for managing cloud infrastructure, platform governance, application-specific setups, and utility scripts.
 
 ## Directory Structure and Purpose
 ```
