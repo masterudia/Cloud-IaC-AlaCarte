@@ -1,0 +1,45 @@
+# Node.js (if applicable)
+node_modules/
+
+# Python (if applicable)
+*.pyc
+*.pyo
+__pycache__/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.terraform/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# macOS specific
+.DS_Store
+
+# Coverage directories and files
+.coverage/
+*.coveragerc
+
+# Cloud-specific config (if you're not tracking cloud creds)
+*.aws.credentials
+*.azure.credentials
+*.gcp.credentials
+
+# Build artifacts and output directories
+build/
+dist/
+target/
+
+# Ignore other files specific to your platform/scripts
+cloud-scripts/*.log
+cloud-scripts/*.tmp
+
+# Ignore Python virtual environments
+venv/
