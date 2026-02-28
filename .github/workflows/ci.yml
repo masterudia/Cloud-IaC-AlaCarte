@@ -93,6 +93,7 @@ jobs:
         run: |
           set -euo pipefail
           if find . -type f \( -name 'test_*.py' -o -name '*_test.py' \) | grep -q .; then
+            python -m pip install pytest==8.3.3
             python -m pytest -q
           else
             echo "No pytest tests found; skipping pytest."
